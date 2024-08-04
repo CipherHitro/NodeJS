@@ -45,14 +45,17 @@ app.get('/', (req, res) => {
 })
 
 app.get('/instagram',(req,res) =>{
-    res.send("@debug.rohit")
+    res.send("<a href=\"https://www.instagram.com/debug.rohit\">Instagram - @debug.rohit</a>")
 })
 
 app.get('/login',(req,res) =>{
     res.send("<h1>Login Page</h1>")
 })
-
 app.get('/github',(req,res) =>{
+    res.send("<a href=\"https://github.com/CipherHitro\">Github - @CipherHitro</a>")
+})
+
+app.get('/githubdata',(req,res) =>{
     res.json(githubData)
 })
 
